@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roselyn Daguiso — Portfolio</title>
+<meta name="description" content="Personal portfolio of Roselyn Daguiso.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Noto+Serif+JP:wght@300&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="is-loading" id="top">
+
+<div class="loader" id="loader" aria-hidden="true">
+  <p class="loader__jp jp">ポートフォリオ</p>
+  <div class="loader__line"><span class="loader__bar"></span></div>
+  <p class="loader__meta"><span>Roselyn Daguiso</span><span class="loader__count">000</span></p>
+</div>
+
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a class="brand script" href="#top">Roselyn Daguiso</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a href="#profile">Profile</a>
+    <a href="#activities">Activities</a>
+    <a href="#quote">Quote</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" aria-label="Introduction">
+    <p class="hero__jp jp">ポートフォリオ</p>
+    <h1 class="hero__name" aria-label="Your Name">
+      <span style="--i:0"></span><span style="--i:1">R</span><span style="--i:2">O</span><span style="--i:3">S</span><span style="--i:4">E</span><span style="--i:5">L</span><span style="--i:6">Y</span><span style="--i:7">N</span>
+    </h1>
+    <img class="hero__img" src="assets/images/lesa.png" alt="Portrait of Your Name">
+    <p class="hero__script script">Daguiso</p>
+    <div class="hero__news">
+      <p class="script">Current news</p>
+      <p>I’m currently sharpening my UI/UX skills by designing human-centered web interfaces and refining my wireframe-to-prototype workflow. Constantly experimenting with micro-interactions to make web apps feel effortless.</p>
+    </div>
+    <div class="hero__ask">
+      <p class="script">The question is</p>
+      <p>Designing with empathy, testing with feedback, and keeping user interfaces clean and intuitive.</p>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Roselyn Daguiso</span><span>✦</span><span>Aspiring UI/UX Designer</span><span>✦</span><span>Legazpi City</span><span>✦</span><span>Open to work</span><span>✦</span>
+      <span>Roselyn Daguiso</span><span>✦</span><span>Aspiring UI/UX Designer</span><span>✦</span><span>Legazpi City</span><span>✦</span><span>Open to work</span><span>✦</span>
+    </div>
+  </div>
+
+  <section class="section profile" id="profile">
+    <figure class="profile__photo" data-reveal>
+      <img src="assets/images/losa.png" alt="Profile portrait of Your Name">
+      <figcaption class="label">Portrait</figcaption>
+    </figure>
+    <div class="profile__body">
+      <p class="label" data-reveal>Profile</p>
+      <h2 class="title" data-reveal>Hello, I am <span class="script">Roselyn Daguiso</span></h2>
+      <p class="profile__text" data-reveal>Hi, I’m Roselyn Daguiso! I’m a UI/UX designer passionate about turning complex ideas into clean, intuitive digital experiences. I care deeply about crafting interfaces that make everyday tech feel effortless and enjoyable to use.</p>
+      <dl class="facts" data-reveal>
+        <div><dt class="label">Name</dt><dd>Roselyn Daguiso</dd></div>
+        <div><dt class="label">Based in</dt><dd>Legazpi City</dd></div>
+        <div><dt class="label">Role</dt><dd>Aspiring UI/UX Designer</dd></div>
+        <div><dt class="label">Focus</dt><dd>UI/UX Design</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section activities" id="activities">
+    <div class="section__head">
+      <h2 class="title" data-reveal>My <span class="script">Projects</span></h2>
+      <p class="section__note" data-reveal>Basic UI/UX Design Projects</p>
+    </div>
+    <ul class="rows" data-reveal>
+      <li class="row" data-preview="assets/images/pitoy.png">
+        <span class="row__year label">2026</span>
+        <h3 class="row__title">PitoySenpai</h3>
+        <p class="row__text">PitoySenpai is a lightweight, 100% open-source, and community-driven anime streaming platform designed for enthusiasts who want a clean, lightning-fast, and ad-free way to enjoy their favorite shows.</p>
+        <span class="row__arrow" aria-hidden="true">↗</span>
+      </li>
+      <li class="row" data-preview="assets/images/abot.png">
+        <span class="row__year label">2025</span>
+        <h3 class="row__title">ABOT Lending Corporation System</h3>
+        <p class="row__text">ABOT Lending Corporation System is a cooperative loan management system. Borrowers register, apply for a loan, and follow every application from one secure account, while administrators review each…</p>
+        <span class="row__arrow" aria-hidden="true">↗</span>
+      </li>
+    </ul>
+    <div class="preview" aria-hidden="true">
+      <!-- REPLACE PHOTO HERE: Activity previews are set with data-preview on each row above -->
+      <img src="assets/images/gallery-1.svg" alt="">
+    </div>
+  </section>
+
+  <section class="section section--dark quote" id="quote">
+    <span class="quote__ghost jp" aria-hidden="true">言葉</span>
+    <p class="label" data-reveal>The question is</p>
+    <blockquote data-reveal>
+      <p>It is not impossible, it is just <em>hard.</em></p>
+      <footer class="script">— Roselyn Daguiso</footer>
+    </blockquote>
+  </section>
+
+  <section class="section gallery" id="gallery">
+    <div class="section__head">
+      <h2 class="title" data-reveal>Portraits of <span class="script">Me</span></h2>
+      <div class="slider-ui" data-reveal>
+        <p class="label">Drag to explore</p>
+        <div class="slider-ui__buttons">
+          <button type="button" class="round" data-prev aria-label="Previous photos">←</button>
+          <button type="button" class="round" data-next aria-label="Next photos">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="track" data-slider tabindex="0" aria-label="Photo gallery">
+      <figure class="slide">
+        <img src="assets/images/lnhs.jpg" alt="Gallery photo 1" draggable="false">
+        <figcaption class="label">No. 01 — Selfie</figcaption>
+      </figure>
+      <figure class="slide">
+        <img src="assets/images/potaka.png" alt="Gallery photo 2" draggable="false">
+        <figcaption class="label">No. 02 — Editorial</figcaption>
+      </figure>
+      <figure class="slide">
+        <img src="assets/images/hayupka.png" alt="Gallery photo 3" draggable="false">
+        <figcaption class="label">No. 03 — Studio</figcaption>
+      </figure>
+      <figure class="slide">
+        <img src="assets/images/makanusonkaman.png" alt="Gallery photo 4" draggable="false">
+        <figcaption class="label">No. 04 — Golden hour</figcaption>
+      </figure>
+    </div>
+    <div class="progress"><span class="progress__bar" data-progress></span></div>
+  </section>
+
+  <section class="section section--dark contact" id="contact">
+    <p class="label" data-reveal>Contact</p>
+    <h2 class="title" data-reveal><span class="script">Say hello!</span></h2>
+    <ul class="links" data-reveal>
+      <li><a href="https://www.instagram.com/rslyn__/?hl=en">Instagram <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://github.com/roselyndaguiso26-pixel">Github <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://www.tiktok.com/@_raiaha__?lang=en">TikTok <span aria-hidden="true">↗</span></a></li>
+      <li><a href="mailto:roselyndaguiso26@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
+    </ul>
+    <div class="contact__meta">
+      <p class="label">Designed and built by you</p>
+      <p class="script">HELLOOOOOO</p>
+      <a class="to-top label" href="#top">Back to top <span class="round" aria-hidden="true">↑</span></a>
+    </div>
+    <p class="contact__name" aria-hidden="true">Roselyn</p>
+    <p class="contact__legal label">© <span data-year>2026</span>Roselyn Daguiso — Portfolio</p>
+  </section>
+</main>
+
+<script src="js/loader.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
