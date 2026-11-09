@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.site-header {
+  transition: background-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+
+.site-header.is-scrolled {
+  background: rgba(255, 251, 249, 0.95);
+  box-shadow: 0 10px 30px -10px rgba(199, 82, 118, 0.15);
+}
+
+.brand {
+  transition: transform 0.3s var(--ease);
+}
+
+.brand:hover {
+  transform: scale(1.03);
+}
+
+.btn {
+  transition: transform 0.35s var(--ease), background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.35s var(--ease);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 14px 30px rgba(199, 82, 118, 0.4);
+}
+
+.btn-ghost:hover {
+  background: var(--ink);
+  color: var(--cream);
+  border-color: var(--ink);
+}
+
+.portrait-sparkle {
+  animation: sparkle-float 4s ease-in-out infinite;
+}
+
+.sparkle-two {
+  animation-delay: -2s;
+}
+
+@keyframes sparkle-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(10deg);
+  }
+}
+
+.hero-photo img,
+.about-visual {
+  transition: transform 0.6s var(--ease), box-shadow 0.6s var(--ease);
+}
+
+.hero-photo img:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 30px 60px -15px rgba(199, 82, 118, 0.35);
+}
+
+.skill-card,
+.education-card {
+  transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease), border-color 0.3s ease;
+}
+
+.skill-card:hover,
+.education-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(199, 82, 118, 0.3);
+  box-shadow: 0 20px 40px -12px rgba(199, 82, 118, 0.2);
+}
+
+.skill-icon {
+  transition: transform 0.5s var(--ease);
+}
+
+.skill-card:hover .skill-icon {
+  transform: rotate(-8deg) scale(1.1);
+}
+
+.resume-thumb {
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+  transform: rotate(1.5deg);
+}
+
+.resume-thumb:hover {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow: 0 25px 50px -15px rgba(199, 82, 118, 0.3);
+}
+
+.icon-btn {
+  transition: transform 0.35s var(--ease), background-color 0.25s ease, color 0.25s ease;
+}
+
+.icon-btn:hover {
+  transform: rotate(90deg);
+  background: var(--rose);
+  color: var(--white);
+}
+
+.footer-col a {
+  transition: color 0.25s ease, padding-left 0.35s var(--ease);
+}
+
+.footer-col a:hover {
+  color: var(--pink);
+  padding-left: 4px;
+}
+
+.js [data-reveal] {
+  opacity: 0;
+  filter: blur(12px);
+  transform: translateY(24px);
+  transition: opacity 0.9s var(--ease) var(--d, 0ms), filter 0.9s var(--ease) var(--d, 0ms),
+    transform 0.9s var(--ease) var(--d, 0ms);
+}
+
+.js [data-reveal].is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: none;
+}
+
+.panel,
+.modal {
+  visibility: hidden;
+  transition: visibility 0s linear 0.5s;
+}
+
+.panel.is-open,
+.modal.is-open {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.panel-scrim,
+.modal-scrim {
+  opacity: 0.01;
+  -webkit-backdrop-filter: blur(0);
+  backdrop-filter: blur(0);
+  transition: opacity 0.5s var(--ease), backdrop-filter 0.5s var(--ease),
+    -webkit-backdrop-filter 0.5s var(--ease);
+}
+
+.panel.is-open .panel-scrim,
+.modal.is-open .modal-scrim {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.panel-body {
+  transform: translateX(100%);
+  transition: transform 0.55s var(--ease);
+}
+
+.panel.is-open .panel-body {
+  transform: none;
+}
+
+.modal-dialog {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(28px) scale(0.97);
+  transition: opacity 0.45s var(--ease), filter 0.45s var(--ease), transform 0.55s var(--ease);
+}
+
+.modal.is-open .modal-dialog {
+  opacity: 1;
+  filter: blur(0);
+  transform: none;
+}
+
+.nav-toggle span {
+  transition: transform 0.4s var(--ease), opacity 0.25s ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
